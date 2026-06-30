@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Segoe UI, system-ui, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#f8f6ff" rx="16"/>
+  
+  <!-- Title -->
+  <text x="600" y="45" text-anchor="middle" font-size="24" font-weight="800" fill="#1f2937">Pocket Buddy — Technical Architecture</text>
+  <text x="600" y="70" text-anchor="middle" font-size="13" fill="#6b7280">Team Amaze-On</text>
+
+  <!-- USER -->
+  <rect x="500" y="90" width="200" height="50" rx="12" fill="#7c3aed" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="600" y="120" text-anchor="middle" font-size="14" font-weight="600" fill="white">👤 User (Browser/Mobile)</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="140" x2="600" y2="170" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- FRONTEND BOX -->
+  <rect x="350" y="170" width="500" height="140" rx="16" fill="white" stroke="#e9d5ff" stroke-width="2"/>
+  <text x="600" y="195" text-anchor="middle" font-size="15" font-weight="700" fill="#7c3aed">Frontend (Vercel)</text>
+  <text x="600" y="215" text-anchor="middle" font-size="12" fill="#6b7280">React 18 + Vite + React Router</text>
+  
+  <!-- Frontend components -->
+  <rect x="370" y="230" width="110" height="32" rx="8" fill="#f5f3ff" stroke="#e9d5ff"/>
+  <text x="425" y="251" text-anchor="middle" font-size="11" fill="#7c3aed">Dashboard</text>
+  
+  <rect x="490" y="230" width="110" height="32" rx="8" fill="#f5f3ff" stroke="#e9d5ff"/>
+  <text x="545" y="251" text-anchor="middle" font-size="11" fill="#7c3aed">AI Companion</text>
+  
+  <rect x="610" y="230" width="110" height="32" rx="8" fill="#f5f3ff" stroke="#e9d5ff"/>
+  <text x="665" y="251" text-anchor="middle" font-size="11" fill="#7c3aed">Health/Money</text>
+  
+  <rect x="730" y="230" width="100" height="32" rx="8" fill="#f5f3ff" stroke="#e9d5ff"/>
+  <text x="780" y="251" text-anchor="middle" font-size="11" fill="#7c3aed">Journal/Goals</text>
+  
+  <!-- Recharts & Clerk badges -->
+  <rect x="370" y="272" width="80" height="24" rx="6" fill="#ede9fe"/>
+  <text x="410" y="288" text-anchor="middle" font-size="10" fill="#6d28d9">Recharts</text>
+  
+  <rect x="460" y="272" width="60" height="24" rx="6" fill="#ede9fe"/>
+  <text x="490" y="288" text-anchor="middle" font-size="10" fill="#6d28d9">Axios</text>
+  
+  <rect x="530" y="272" width="90" height="24" rx="6" fill="#ede9fe"/>
+  <text x="575" y="288" text-anchor="middle" font-size="10" fill="#6d28d9">Clerk Auth</text>
+
+  <!-- Arrow down from frontend -->
+  <line x1="600" y1="310" x2="600" y2="350" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="620" y="335" font-size="10" fill="#6b7280">REST API</text>
+
+  <!-- BACKEND BOX -->
+  <rect x="350" y="350" width="500" height="130" rx="16" fill="white" stroke="#c4b5fd" stroke-width="2"/>
+  <text x="600" y="378" text-anchor="middle" font-size="15" font-weight="700" fill="#7c3aed">Backend (AWS EC2)</text>
+  <text x="600" y="398" text-anchor="middle" font-size="12" fill="#6b7280">FastAPI + Uvicorn + Python 3.12</text>
+  
+  <!-- Backend routes -->
+  <rect x="370" y="410" width="75" height="28" rx="6" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="407" y="429" text-anchor="middle" font-size="10" fill="#6d28d9">/auth</text>
+  
+  <rect x="455" y="410" width="75" height="28" rx="6" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="492" y="429" text-anchor="middle" font-size="10" fill="#6d28d9">/journal</text>
+  
+  <rect x="540" y="410" width="75" height="28" rx="6" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="577" y="429" text-anchor="middle" font-size="10" fill="#6d28d9">/money</text>
+  
+  <rect x="625" y="410" width="75" height="28" rx="6" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="662" y="429" text-anchor="middle" font-size="10" fill="#6d28d9">/health</text>
+  
+  <rect x="710" y="410" width="75" height="28" rx="6" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="747" y="429" text-anchor="middle" font-size="10" fill="#6d28d9">/goals</text>
+  
+  <rect x="370" y="445" width="95" height="28" rx="6" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="417" y="464" text-anchor="middle" font-size="10" fill="#6d28d9">/companion</text>
+  
+  <rect x="475" y="445" width="75" height="28" rx="6" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="512" y="464" text-anchor="middle" font-size="10" fill="#6d28d9">/cycle</text>
+
+  <!-- Arrows to services -->
+  <!-- Arrow to DynamoDB -->
+  <line x1="500" y1="480" x2="400" y2="540" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  
+  <!-- Arrow to AI -->
+  <line x1="600" y1="480" x2="600" y2="540" stroke="#10b981" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Arrow to Clerk -->
+  <line x1="700" y1="480" x2="800" y2="540" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- DYNAMODB -->
+  <rect x="280" y="540" width="220" height="70" rx="14" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="390" y="567" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">🗄️ AWS DynamoDB</text>
+  <text x="390" y="587" text-anchor="middle" font-size="10" fill="#78350f">Users • Journal • Money</text>
+  <text x="390" y="601" text-anchor="middle" font-size="10" fill="#78350f">Health • Goals • CycleTracker</text>
+
+  <!-- AI SERVICES -->
+  <rect x="510" y="540" width="180" height="70" rx="14" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="600" y="567" text-anchor="middle" font-size="13" font-weight="700" fill="#065f46">🤖 AI Services</text>
+  <text x="600" y="587" text-anchor="middle" font-size="10" fill="#064e3b">AWS Bedrock (Nova)</text>
+  <text x="600" y="601" text-anchor="middle" font-size="10" fill="#064e3b">Google Gemini (fallback)</text>
+
+  <!-- CLERK -->
+  <rect x="710" y="540" width="180" height="70" rx="14" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="800" y="567" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a5f">🔐 Clerk Auth</text>
+  <text x="800" y="587" text-anchor="middle" font-size="10" fill="#1e3a5f">Google OAuth + Email</text>
+  <text x="800" y="601" text-anchor="middle" font-size="10" fill="#1e3a5f">Session Management</text>
+
+  <!-- DOCKER badge -->
+  <rect x="50" y="360" width="130" height="40" rx="10" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="115" y="385" text-anchor="middle" font-size="12" font-weight="600" fill="#0369a1">🐳 Docker</text>
+
+  <!-- Legend -->
+  <rect x="50" y="630" width="1100" height="50" rx="10" fill="white" stroke="#e5e7eb"/>
+  <circle cx="90" cy="655" r="6" fill="#7c3aed"/>
+  <text x="105" y="659" font-size="11" fill="#4b5563">Frontend</text>
+  <circle cx="200" cy="655" r="6" fill="#f59e0b"/>
+  <text x="215" y="659" font-size="11" fill="#4b5563">Database</text>
+  <circle cx="310" cy="655" r="6" fill="#10b981"/>
+  <text x="325" y="659" font-size="11" fill="#4b5563">AI/ML</text>
+  <circle cx="400" cy="655" r="6" fill="#3b82f6"/>
+  <text x="415" y="659" font-size="11" fill="#4b5563">Auth</text>
+  <circle cx="490" cy="655" r="6" fill="#c4b5fd"/>
+  <text x="505" y="659" font-size="11" fill="#4b5563">Backend</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+  </defs>
+</svg>

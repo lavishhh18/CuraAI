@@ -1,0 +1,30 @@
+{
+  "name": "CuraAI",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@clerk/clerk-react": "^5.61.8",
+    "@supabase/supabase-js": "^2.108.1",
+    "axios": "^1.17.0",
+    "lucide-react": "^1.18.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^19.2.7",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "vite": "^8.0.16"
+  }
+}

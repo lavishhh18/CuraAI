@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FAFAF9;
+  color: #1C1917;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: 2px solid #0D9488;
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] body {
+  background: #0C0A09;
+  color: #FAFAF9;
+}
+
+.cura-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cura-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.cura-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.cura-grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.cura-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .cura-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .cura-grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .cura-grid-2,
+  .cura-grid-3,
+  .cura-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes cura-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cura-animate-in {
+  animation: cura-fade-in 0.35s ease forwards;
+}
+
+.cura-scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cura-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.cura-companion-gradient {
+  background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 40%, #0D9488 100%);
+}

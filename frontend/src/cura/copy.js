@@ -1,0 +1,108 @@
+export const copy = {
+  brand: {
+    name: "Cura AI",
+    tagline: "Your intelligent life companion",
+  },
+  overview: {
+    title: "Life Overview",
+    greeting: (name) => `Welcome back${name ? `, ${name}` : ""}.`,
+    subtitle: "Here's your daily overview.",
+    companionCard: {
+      title: "Cura Companion",
+      cta: "Continue conversation",
+      empty: "Your companion is ready when you are.",
+    },
+    wellnessScore: "Wellness Score",
+    financialSnapshot: "Financial Snapshot",
+    habitStreaks: "Today's Habits",
+    goalProgress: "Personal Growth",
+    reflections: "Recent Reflections",
+    insights: "AI Insights",
+    quickActions: "Quick Actions",
+    empty: {
+      wellness: "Start tracking wellness to unlock your score.",
+      finances: "Record your first transaction to see your snapshot.",
+      habits: "Complete habits to build your streak.",
+      goals: "Set a growth target to begin your journey.",
+      reflections: "Capture your first reflection today.",
+      transactions: "No recent activity yet.",
+    },
+  },
+  companion: {
+    title: "Cura Companion",
+    subtitle: "Your personal coach, guide, and life companion.",
+    placeholder: "Ask Cura anything about your wellness, finances, or goals…",
+    send: "Send",
+    typing: "Cura is thinking…",
+    intro: (name, companion) =>
+      `${companion} is here — your trusted guide for wellness, finances, and personal growth.`,
+    quickQuestions: "Suggested prompts",
+    moodCheck: "How are you feeling?",
+    error: "Something went wrong. Please try again.",
+  },
+  wellness: {
+    title: "Wellness",
+    subtitle: "Track sleep, movement, hydration, and body signals.",
+    cycle: {
+      title: "Cycle Wellness",
+      subtitle: "Track cycles, symptoms, and predictions with care.",
+      log: "Log Cycle Entry",
+      empty: "Log your first cycle entry to unlock predictions.",
+      pms: (days) => `Your next cycle is estimated in ${days} day${days !== 1 ? "s" : ""}. Be gentle with yourself today.`,
+    },
+    empty: "Start tracking to unlock personalized wellness insights.",
+  },
+  habits: {
+    title: "Habits",
+    subtitle: "Build consistency, one day at a time.",
+    today: "Today's Focus",
+    empty: "Your habits will appear here once you begin tracking.",
+  },
+  finances: {
+    title: "Financial Wellness",
+    subtitle: "Understand spending, saving, and your financial rhythm.",
+    add: "Record Transaction",
+    empty: "Record your first transaction to unlock financial insights.",
+  },
+  reflections: {
+    title: "Reflections",
+    subtitle: "Capture thoughts, moods, and moments that matter.",
+    mood: "How are you feeling?",
+    write: "What's on your mind?",
+    save: "Save Reflection",
+    saved: "Reflection saved",
+    history: "Your Reflection History",
+    empty: "Your first reflection is a meaningful step toward clarity.",
+  },
+  growth: {
+    title: "Personal Growth",
+    subtitle: "Set intentions and track meaningful progress.",
+    add: "Set New Goal",
+    active: "In Progress",
+    completed: "Achieved",
+    empty: "Define your first goal to start growing intentionally.",
+  },
+  insights: {
+    title: "Insights",
+    subtitle: "Patterns, trends, and intelligence from your life data.",
+    empty: "Start tracking to unlock personalized insights.",
+  },
+  settings: {
+    title: "Settings",
+    subtitle: "Manage your profile, preferences, and account.",
+  },
+  auth: {
+    login: {
+      title: "Welcome back",
+      subtitle: "Sign in to continue with Cura AI.",
+    },
+    signup: {
+      title: "Begin with Cura",
+      subtitle: "Create your account and meet your intelligent life companion.",
+    },
+    onboarding: {
+      title: "Let's personalize Cura",
+      subtitle: "A few details help Cura understand and support you better.",
+    },
+  },
+};
