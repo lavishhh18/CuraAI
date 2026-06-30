@@ -20,7 +20,7 @@ app = FastAPI(title="CuraAI API")
 # --- CORS Middleware ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174"],
+    allow_origins=["http://localhost:5173", "http://localhost:5174","https://cura-ai-ten.vercel.app/","https://cura-ai-git-main-saumya-workflow.vercel.app/","https://cura-i37qtpye2-saumya-workflow.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
